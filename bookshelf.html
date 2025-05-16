@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<nav>
+    <ul class="items">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="bookshelf.html" class="active">Bookshelf</a></li>
+                <li><a href="activities.html"> Quiz </a></li>
+                <li><a href="notes-app.html">Notes</a></li>
+                <li><a href="quiz-results.html">Achievements</a></li>
+</nav>
+
+<div id="bookshelf-popup" class="popup-container">
+  <div class="popup-content">
+    <button id="close-popup" class="close-btn">&times;</button>
+    <h2> Important! </h2>
+    <p> Please open "Sense and Sensibility" to preview our e-reader interface. </p>
+    <button id="accept-popup" class="action-btn">Got It!</button>
+  </div>
+</div>
+
+<main>
+
+    <button onclick="clearBookshelf()" style="margin-bottom: 20px;">Clear Bookshelf</button>
+    
+    <div class="book-grid" id="bookshelf-container">
+    
+    </div>
+
+    <script src="bookshelf.js"></script>
+    <script src="shared.js"></script>
+
+<div id="confirm-popup" class="modal hidden">
+    <div class="modal-content">
+      <p>Are you sure you want to clear your bookshelf?</p>
+      <div class="modal-buttons">
+        <button onclick="confirmClear()">Yes, clear it</button>
+        <button onclick="cancelClear()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+<div id="toast" class="toast-message hidden"></div>
+  
+</body>
+
+</html>

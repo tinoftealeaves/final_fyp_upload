@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8" />
+        <meta  name=" viewport"content= "width=device-width, initial-scale=1.0"/>
+        <title> E-Shop</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;500;700&family=Inter:wght@400;600&display=swap">
+
+<style>
+
+#shop-title {
+    padding-top: 90px;
+    width:360px; 
+    padding-left:30px;
+}
+
+</style>
+
+    </head>
+
+    <body>
+        <nav>
+            <div id="wrapper">
+            <ul class="items">
+                    <li><a href="shop.html" class="active">Shop</a></li>                
+           <li> <a href="bookshelf.html">Bookshelf</a> 
+                    </li>
+                    <li><a href="activities.html"> Quiz </a></li>
+                    <li><a href="notes-app.html">Notes</a></li>
+                    <li><a href="quiz-results.html">Achievements</a></li>
+           </ul>
+            </div>
+        </nav>
+
+        <main>
+
+            <div id="shop-title"> 
+            <h1> Our Current Collection </h1>
+            <p> Browse all of our currently available titles. </p>
+            </div>
+
+    <table>
+  
+        
+    <div class="book-scroll">
+
+        <tr>
+
+        <th>
+
+             <div class="book">
+                <div class="book-frame">
+                <img src="senseandsensibility.jpg" alt="Sense and Sensibility" />
+                </div>
+            <h3> Sense and Sensibility </h3>
+            <div style="margin-top: auto;">
+                <button onclick="addToBookshelf('Sense and Sensibility', 'senseandsensibility.jpg')">Add to Bookshelf</button>
+        </th>
+    
+        <th>
+            </div>
+
+            <div class="book">
+                <div class="book-frame">
+                <img src="romeoandjuliet.jpg" alt="Romeo and Juliet" />
+                </div>
+              <h3> Romeo and Juliet </h3>
+              <div style="margin-top: auto;">
+                <button onclick="addToBookshelf('Romeo and Juliet', 'romeoandjuliet.jpg')">Add to Bookshelf</button>
+            </div>
+
+        </th>
+    <th>    
+            <div class="book">
+                <div class="book-frame">
+                <img src="carmilla.jpg" alt="Carmilla" />
+                </div>
+                 <h3> Carmilla </h3>
+                <div style="margin-top: auto;">
+                <button onclick="addToBookshelf('Carmilla', 'carmilla.jpg')">Add to Bookshelf</button>
+            </div>
+            </div>
+    </th>
+
+    <th>
+
+            <div class="book">
+                <div class="book-frame">
+                <img src="sevendials.png" alt="The Seven Dials Mystery" />
+                </div>
+                <h3> The Seven Dials Mystery </h3>
+                <div style="margin-top: auto;">
+                <button onclick="addToBookshelf('The Seven Dials Mystery', 'sevendials.png')">Add to Bookshelf</button>
+            </div>
+            </div>
+    </th>
+    <th>
+
+            <div class="book">
+                <div class="book-frame">
+                <img src="orange.jpg" alt="The Orange" />
+                </div>
+                <h3> The Orange </h3>
+                <div style="margin-top: auto;">
+                <button onclick="addToBookshelf('The Orange', 'orange.jpg')">Add to Bookshelf</button>
+              </div>
+            </div>
+    </th>
+    <th>
+
+              <div class="book">
+                <div class="book-frame">
+                <img src="AllQuietEnglishCover.png" alt="All Quiet on the Western Front" />
+                </div>
+                <h3> All Quiet on the Western Front </h3>
+                <div style="margin-top: auto;">
+                <button onclick="addToBookshelf('All Quiet on the Western Front', 'AllQuietEnglishCover.png')">Add to Bookshelf</button>
+            </div>
+              </div>
+     </th>
+  
+    <th>
+
+        <div class="book">
+            <div class="book-frame">
+                <img src="lovecraft.jpg" alt="The Colour Out of Space" />
+            </div>
+                <h3> The Colour Out of Space </h3>
+                <div style="margin-top: auto;">
+                <button onclick="addToBookshelf('The Colour Out of Space', 'lovecraft.jpg')">Add to Bookshelf</button>
+            </div>
+        </div>
+        </th>
+    </tr> 
+
+    </table>
+    
+
+    </div>
+          
+    
+        </main>
+        <div id="toast" class="toast-message hidden">Book added!</div>
+
+        <script src="shop.js"></script>
+        <script src="shared.js"></script>
+
+        
+    </body>
+
+    
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Achievements</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <nav>
+    <div id="wrapper">
+      <ul class="items">
+        <li><a href="shop.html">Shop</a></li>                
+        <li>
+            <a href="bookshelf.html">Bookshelf</a> 
+        </li>
+        <li><a href="activities.html">Quiz</a></li>
+        <li><a href="notes-app.html">Notes</a></li>
+        <li><a href="quiz-results.html" class="active">Achievements</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="achievements-page">
+    
+    <div class="stats-summary">
+      <div class="stat-card">
+        <i class="fas fa-trophy"></i>
+        <h3>Quizzes Completed</h3>
+        <p id="total-quizzes">0</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-star"></i>
+        <h3>Average Score</h3>
+        <p id="average-score">0%</p>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-medal"></i>
+        <h3>Highest Score</h3>
+        <p id="highest-score">0%</p>
+      </div>
+    </div>
+
+    <div class="results-container">
+      <h2>Recent Quiz Results</h2>
+      <div id="quiz-results" class="quiz-results-grid"></div>
+    </div>
+
+    <div class="badges-container">
+      <h2> Your Badges</h2>
+      <div id="badges" class="badges-grid"></div>
+    </div>
+  </main>
+
+  <script src="quiz.js"></script>
+   <script src="quiz-results.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activities</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="activities.js" defer></script>
+</head>
+
+<div id="quiz-popup" class="popup-container">
+  <div class="popup-content">
+    <button id="close-popup" class="close-btn">&times;</button>
+    <h2> Quizzes available:</h2>
+    <p> Romeo and Juliet </p>
+    <p> Sense and Sensibility </p>
+    <button id="accept-popup" class="action-btn">Got It!</button>
+  </div>
+</div>
+
+<body>
+  <nav>
+    <ul class="items">
+      <li><a href="shop.html">Shop</a></li>
+        <li>
+            <a href="bookshelf.html">Bookshelf</a> 
+        </li>
+      <li><a href="activities.html" class="active"> Quiz</a></li>
+      <li><a href="notes-app.html">Notes</a></li>
+      <li><a href="quiz-results.html">Achievements</a></li>
+    </ul>
+  </nav>
+
+  <main class="quiz-page">
+    <h1 class="page-title">Choose a Book to Begin... </h1>
+    <div id="book-selection" class="book-grid"></div>
+    <div id="quiz-container" class="hidden">
+    <div id="question"></div>
+    <div id="options"></div>
+    <button id="next-btn" class="hidden">Next</button>
+    <p id="score" class="hidden"></p>
+  </div>
+  </main>
+</body>
+</html>

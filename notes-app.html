@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+    <ul class="items">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="bookshelf.html">Bookshelf</a> </li>
+                <li><a href="activities.html"> Quiz </a></li>
+                <li><a href="notes.html" class="active">Notes</a></li>
+                <li><a href="quiz-results.html">Achievements</a></li>
+    </ul>
+</nav>
+
+    <div class="app-container">
+
+        <div class="notes-container">
+
+            <!-- SIDEBAR -->
+            <div class="notes-sidebar">
+
+                <div class="search-box">
+                    <input type="text" id="search-notes" placeholder="Search notes...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div id="notes-list" class="notes-list">
+                </div>
+
+            <div id="plusminus">
+
+            <button id="new-note-btn" class="note-btn" title="Create New Note">
+                <i class="fas fa-plus"></i>
+            </button>
+
+             <button id="delete-note" class="note-btn btn-delete" title="Delete Note">
+                        <i class="fas fa-trash"></i> 
+            </button>
+
+            </div>
+
+        </div>
+
+            <!-- ACTUAL WRITING BIT -->
+            <div class="note-editor">
+                <input type="text" id="note-title" placeholder="Title">
+
+                <textarea id="note-content" placeholder="You can start writing here..."></textarea>
+
+                <div class="editor-actions">
+
+                    <button id="save-note" class="note-btn btn-save" title="Save Note">
+                        <i class="fas fa-save"></i> 
+                    </button>
+
+            
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="java_notes.js"> </script>
+</body>
+</html>
